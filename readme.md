@@ -8,7 +8,7 @@ Projet Akieni Academy — Cohorte 2 (Semaines 14-15, Module 3).
 2. Créer une base PostgreSQL `bibliotheque` et exécuter `schema.sql`
 3. Copier `.env.example` en `.env` et renseigner vos identifiants
 4. `npm run dev` → serveur sur http://localhost:3000
-5. Ouvrir `frontend/index.html` dans le navigateur
+5. Ouvrir `index.html` dans le navigateur
 
 ## Modèle de données
 
