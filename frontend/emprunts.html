@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bibliothèque - Emprunts</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="auteurs.html">Auteurs</a>
+      <a href="adherents.html">Adhérents</a>
+      <a href="emprunts.html">Emprunts</a>
+      <a href="dashboard.html">Tableau de bord</a>
+    </nav>
+
+    <main>
+      <h1>Emprunts</h1>
+      <div id="error-zone"></div>
+
+      <h2>Créer un emprunt</h2>
+      <form id="form-emprunt">
+        <select id="emprunt-livre" required></select>
+        <select id="emprunt-adherent" required></select>
+        <input type="date" id="emprunt-date-retour" required />
+        <button type="submit">Emprunter</button>
+      </form>
+
+      <div id="emprunts-liste" style="margin-top: 2rem"></div>
+      <section class="emprunts-en-cours">
+        <h2>Emprunts en cours</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Livre</th>
+              <th>Adhérent</th>
+              <th>Retour prévu</th>
+              <th>Statut</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="emprunts-tbody"></tbody>
+        </table>
+      </section>
+    </main>
+
+    <script src="js/emprunts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+.stat-card.total {
+  border-top-color: #378add;
+}
+
+.stat-card.adherents {
+  border-top-color: #7f77dd;
+}
+
+.stat-card.en-cours {
+  border-top-color: #1d9e75;
+}
+
+.stat-card.en-retard {
+  border-top-color: #e24b4a;
+}
+
+.stat-card .icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #94a3b8;
+}
+
+.stat-card.en-retard .value {
+  color: #a32d2d;
+}

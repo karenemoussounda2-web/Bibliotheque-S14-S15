@@ -1,4 +1,5 @@
 const express = require("express");
+const cors = require("cors");
 const pool = require("./db");
 const logger = require("./middlewares/logger");
 const errorHandler = require("./middlewares/errorHandler");
@@ -10,6 +11,7 @@ const empruntsRoutes = require("./routes/emprunts.routes");
 const statsRoutes = require("./routes/stats.routes");
 
 const app = express();
+app.use(cors());
 
 app.use(express.json());
 app.use(logger);

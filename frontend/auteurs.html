@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bibliothèque - Auteurs</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="auteurs.html">Auteurs</a>
+      <a href="adherents.html">Adhérents</a>
+      <a href="emprunts.html">Emprunts</a>
+      <a href="dashboard.html">Tableau de bord</a>
+    </nav>
+
+    <main>
+      <h1>Auteurs</h1>
+      <div id="error-zone"></div>
+
+      <form id="form-auteur">
+        <input type="text" id="auteur-nom" placeholder="Nom" required />
+        <input type="text" id="auteur-nationalite" placeholder="Nationalité" />
+        <button type="submit">Ajouter</button>
+      </form>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Nom</th>
+            <th>Nationalité</th>
+          </tr>
+        </thead>
+        <tbody id="auteurs-tbody"></tbody>
+      </table>
+    </main>
+
+    <script src="js/auteurs.js"></script>
+  </body>
+</html>

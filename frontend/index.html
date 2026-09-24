@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Libary's Quarter</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Accueil</a>
+        <a href="auteurs.html">Auteurs</a>
+        <a href="adherents.html">Adhérents</a>
+        <a href="emprunts.html">Emprunts</a>
+        <a href="dashboard.html">Tableau de bord</a>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <h1>Bienvenue sur la Bibliothèque du quartier</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur
+          laborum maiores, exercitationem nihil ipsam natus?
+        </p>
+      </section>
+      <section class="livres">
+        <div class="erreur-message" id="erreur-zone"></div>
+
+        <div class="ajout-livres">
+          <h2>Ajouter un livre</h2>
+          <form id="form-livre">
+            <input type="text" id="livre-titre" placeholder="Titre" required />
+            <input
+              type="number"
+              id="livre-annee"
+              placeholder="Année de publication"
+            />
+            <select id="livre-auteur"></select>
+            <button type="submit">Ajouter</button>
+          </form>
+
+          <hr style="margin: 2rem 0" />
+
+          <h2>Rechercher</h2>
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Titre ou auteur..."
+          />
+          <button onclick="rechercherLivres()">Rechercher</button>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Titre</th>
+              <th>Auteur</th>
+              <th>Année</th>
+              <th>Statut</th>
+            </tr>
+          </thead>
+          <tbody id="livres-tbody"></tbody>
+        </table>
+        <div class="pagination">
+          <button id="btn-prev" onclick="pagePrecedente()">Précédent</button>
+          <span id="page-info"></span>
+          <button id="btn-next" onclick="pageSuivante()">Suivant</button>
+        </div>
+      </section>
+    </main>
+    <script src="js/livres.js"></script>
+  </body>
+</html>

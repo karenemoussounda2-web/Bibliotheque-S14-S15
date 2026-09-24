@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Libary's Quarter - Adhérents</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="auteurs.html">Auteurs</a>
+      <a href="adherents.html">Adhérents</a>
+      <a href="emprunts.html">Emprunts</a>
+      <a href="dashboard.html">Tableau de bord</a>
+    </nav>
+
+    <main>
+      <h1>Ajouter des Adherents</h1>
+      <form id="form-adherent">
+        <input type="text" id="adherent-nom" placeholder="Nom" required />
+        <input type="text" id="adherent-contact" placeholder="Contact" />
+        <button type="submit">Ajouter</button>
+      </form>
+      <h1>Liste des adhérents</h1>
+
+      <div id="erreur-zone"></div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Nom</th>
+            <th>Contact</th>
+            <th>Historique</th>
+          </tr>
+        </thead>
+        <tbody id="adherents-tbody"></tbody>
+      </table>
+
+      <div id="historique-zone" style="margin-top: 2rem"></div>
+    </main>
+
+    <script src="js/adherents.js"></script>
+  </body>
+</html>
